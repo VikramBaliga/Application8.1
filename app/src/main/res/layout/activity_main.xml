@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="projects.android.my.application81.MainActivity">
+
+
+    <Button android:onClick="sortAscending"
+        android:id="@+id/btnAscending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:text="Ascending"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <Button android:onClick="sortDescending"
+        android:id="@+id/btnDescending"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descending"
+        android:layout_alignBaseline="@+id/btnAscending"
+        android:layout_alignBottom="@+id/btnAscending"
+        android:layout_toEndOf="@+id/btnAscending"
+        android:layout_marginStart="120dp"       />
+
+
+    <ListView
+        android:id="@+id/nameList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnDescending"
+        android:layout_marginTop="15dp">
+
+    </ListView>
+</RelativeLayout>
